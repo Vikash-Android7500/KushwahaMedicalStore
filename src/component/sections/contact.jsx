@@ -1,9 +1,9 @@
 import MedicalImage from "..//../assets/medicalImage.png";
-import Location from "..//..//assets/Location.png";
-import Email from "..//..//assets/Email.png";
-import Phone from "../..//assets/phone.png";
 import Spinner from "../Loading/spinner";
 import { useState, useEffect } from "react";
+import { ArrowBigLeft, Mail } from "lucide-react";
+import { MapPinned } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -39,33 +39,29 @@ const Contact = () => {
                 </p>
 
                 <div className="text-blue-500">
-                  <div className="underline flex items-center m-[0.7rem]  cursor-pointer">
-                    <img
-                      src={Location}
-                      className="w-[28px] m-[0.7rem] hover:scale-[1.2] duration-200"
-                      alt=""
-                    />
+                  <div className="underline flex items-center m-[0.7rem] gap-x-2 cursor-pointer">
+                    <MapPinned color="#102E50" />
                     <a
                       href="https://maps.app.goo.gl/MA25yR8S29cRWPmD9"
                       target="_blank"
                     >
                       Directions
                     </a>
+
+                    <div>
+                      <ArrowBigLeft color="red" size={30} />
+                    </div>
                   </div>
-                  <div className="flex items-center m-[0.7rem] cursor-pointer">
-                    <img
-                      src={Email}
-                      className="w-[28px] m-[0.7rem] hover:scale-[1.2] duration-200"
-                      alt="email"
-                    />
+                  <div className="flex items-center gap-x-2 m-[0.7rem] cursor-pointer">
+                    <p>
+                      <Mail color="#102E50" />
+                    </p>
                     <p>lorem@ipsum.com</p>
                   </div>
-                  <div className="flex items-center m-[0.7rem] cursor-pointer">
-                    <img
-                      src={Phone}
-                      className="w-[28px] m-[0.7rem] hover:scale-[1.2] duration-200"
-                      alt="phone"
-                    />
+                  <div className="flex items-center gap-x-2 m-[0.7rem] cursor-pointer">
+                    <p>
+                      <Phone color="#102E50" />
+                    </p>
                     <p>123-456-789</p>
                   </div>
                 </div>

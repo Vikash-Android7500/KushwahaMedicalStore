@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { sectionIds } from "./sectionIds";
-import Logo3D from "/logo3D.png";
 import { Link } from "react-router-dom";
+import { BriefcaseMedical } from "lucide-react";
 
 export const NavBar = () => {
   //State to track the active link and scroll state
@@ -54,7 +54,6 @@ export const NavBar = () => {
     };
   }, []);
   return (
-
     <header
       className={`z-40 fixed p-2 top-0 left-0 w-full transition-all ${
         isScrolled ? "" : "bg-transparent"
@@ -62,12 +61,11 @@ export const NavBar = () => {
     >
       <div className="p-2 mx-auto flex flex-wrap items-center justify-around rounded-3xl shadow-md bg-[#FFFDD0] text-blue-500">
         <div className="flex items-center gap-4">
-            <img
-              className="hover:scale-75 duration-200"
-              src={Logo3D}
-              alt="Logo"
-              width={48}
-            />
+          <BriefcaseMedical
+            className="hover:scale-75 duration-200"
+            color="red"
+            size={32}
+          />
           <span className="uppercase font-bold tracking-wider text-xl">
             Kushwaha Medical Store
           </span>
@@ -81,13 +79,11 @@ export const NavBar = () => {
                 activeLink === item ? "text-red-400" : "text-blue-500"
               }`}
               onClick={() => scrollToSection(item)}
-              
             >
-            <Link to={"/"}
-            className={activeLink === sectionIds ? "" : ""}
-            >
-
-            </Link>
+              <Link
+                to={"/"}
+                className={activeLink === sectionIds ? "" : ""}
+              ></Link>
               {item}
             </button>
           ))}

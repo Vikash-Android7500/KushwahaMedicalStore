@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Spinner from "../Loading/spinner";
+import { CircleChevronLeft } from "lucide-react";
+import { CircleChevronRight } from "lucide-react";
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -81,18 +83,18 @@ const Blog = () => {
               <div>
                 {/* Previous Button */}
                 <button
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
+                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
                   onClick={prevSlide}
                 >
-                  ‹
+                  <CircleChevronLeft/>
                 </button>
 
                 {/* Next Button */}
                 <button
-                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
+                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
                   onClick={nextSlide}
                 >
-                  ›
+                  <CircleChevronRight />
                 </button>
               </div>
 

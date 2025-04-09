@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import Medical from "..//../assets/medicalImage.png";
 import Spinner from "../Loading/spinner";
+import { Pill } from "lucide-react";
+import { Tablets } from "lucide-react";
+import { Syringe } from "lucide-react";
 
 const Hero = () => {
   const [loading, setLoading] = useState(false);
@@ -35,6 +38,11 @@ const Hero = () => {
               <ol className="text-blue-600 flex flex-col gap-y-3 font-semibold text-xl">
                 <li>हमारे यहां आयुर्वेदिक व अंग्रेज़ी दवाइयाँ मिलती हैं</li>
                 <li>और जनावर की दवाइयाँ उचित मूल पर हैं</li>
+                <div className="flex gap-2">
+                  <Pill className="hover:scale-75 duration-200" color="#102E50" size={32}/>
+                  <Tablets className="hover:scale-75 duration-200" color="#102E50" size={32}/>
+                  <Syringe className="hover:scale-75 duration-200" color="#102E50" size={32}/>
+                </div>
               </ol>
             </section>
             <section className="max-w-full sm:max-w-[50%]">
