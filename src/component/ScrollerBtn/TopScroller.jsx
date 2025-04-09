@@ -20,11 +20,11 @@ const TopScroller = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`bg-blue-600 duration-300 fixed bottom-11 md:bottom-5 right-7 md:right-5 p-1 md:p-3 bg-Light text-white rounded-full shadow-xl transition-opacity ${
+      className={`bg-blue-600 duration-300 fixed bottom-11 md:bottom-5 right-7 md:right-5 p-1 md:p-3 rounded-full shadow-xl transition-opacity ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <ArrowUp className="w-6 h-6 active:text-green-400 duration-300" />
+      <ArrowUp className="w-6 h-6 text-green-400 hover:text-green-600 duration-300" />
     </button>
   );
 };

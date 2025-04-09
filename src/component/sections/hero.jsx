@@ -39,9 +39,9 @@ const Hero = () => {
                 <li>हमारे यहां आयुर्वेदिक व अंग्रेज़ी दवाइयाँ मिलती हैं</li>
                 <li>और जनावर की दवाइयाँ उचित मूल पर हैं</li>
                 <div className="flex gap-2">
-                  <Pill className="hover:scale-75 duration-200" color="#102E50" size={32}/>
-                  <Tablets className="hover:scale-75 duration-200" color="#102E50" size={32}/>
-                  <Syringe className="hover:scale-75 duration-200" color="#102E50" size={32}/>
+                  <Pill className="hover:scale-75 duration-200" color="green" size={32}/>
+                  <Tablets className="hover:scale-75 duration-200" color="green" size={32}/>
+                  <Syringe className="hover:scale-75 duration-200" color="green" size={32}/>
                 </div>
               </ol>
             </section>

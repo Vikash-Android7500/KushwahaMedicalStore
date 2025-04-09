@@ -40,7 +40,7 @@ const Contact = () => {
 
                 <div className="text-blue-500">
                   <div className="underline flex items-center m-[0.7rem] gap-x-2 cursor-pointer">
-                    <MapPinned color="#102E50" />
+                    <MapPinned color="green" />
                     <a
                       href="https://maps.app.goo.gl/MA25yR8S29cRWPmD9"
                       target="_blank"
@@ -54,13 +54,13 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center gap-x-2 m-[0.7rem] cursor-pointer">
                     <p>
-                      <Mail color="#102E50" />
+                      <Mail color="green" />
                     </p>
                     <p>lorem@ipsum.com</p>
                   </div>
                   <div className="flex items-center gap-x-2 m-[0.7rem] cursor-pointer">
                     <p>
-                      <Phone color="#102E50" />
+                      <Phone color="green" />
                     </p>
                     <p>123-456-789</p>
                   </div>

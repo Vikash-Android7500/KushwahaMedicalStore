@@ -83,7 +83,7 @@ const Blog = () => {
               <div>
                 {/* Previous Button */}
                 <button
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-green-400 p-2 rounded-full hover:bg-opacity-75"
                   onClick={prevSlide}
                 >
                   <CircleChevronLeft/>
@@ -91,7 +91,7 @@ const Blog = () => {
 
                 {/* Next Button */}
                 <button
-                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-green-400 p-2 rounded-full hover:bg-opacity-75"
                   onClick={nextSlide}
                 >
                   <CircleChevronRight />
