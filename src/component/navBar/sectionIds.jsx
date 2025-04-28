@@ -1,6 +1,6 @@
 //Define the IDs of the sections you want to scroll to
 export const sectionIds = [
-     "hero",
+     "home",
      "comparePrice", 
      "blog", 
      "contact"

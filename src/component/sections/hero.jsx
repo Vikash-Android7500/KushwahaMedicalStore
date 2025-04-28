@@ -19,14 +19,14 @@ const Hero = () => {
   return (
     <>
       <article
-        id="hero"
+        id="home"
         className="h-lvh mb-20 max-w-full font-bold flex flex-col-reverse justify-center items-center lg:flex lg:flex-row lg:justify-around"
       >
         {loading ? (
           <Spinner />
         ) : (
           <>
-            <section className="text-blue-500 p-5 max-w-full sm:max-w-[50%] flex flex-col gap-7">
+            <section className="text-blue-500 p-5 md:p-0 max-w-full sm:max-w-[50%] flex flex-col gap-7">
               <h1 className="text-xl text-pretty md:text-4xl">
                 Kushwaha Medical Store Bisalpur Road Bilsanda
               </h1>

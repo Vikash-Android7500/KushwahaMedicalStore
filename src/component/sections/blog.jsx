@@ -47,12 +47,12 @@ const Blog = () => {
 
   return (
     <>
-      <article id="blog" className="p-10 flex justify-center items-center">
+      <article id="blog" className="p-3 flex justify-center items-center">
         {loading ? (
           <Spinner />
         ) : (
           data.length > 0 && (
-            <section className="relative w-full h-[550px] max-w-[768px] gap-5 rounded-lg overflow-hidden">
+            <section className="relative w-full h-[550px] sm:max-w-[768px] gap-5 rounded-lg overflow-hidden">
               {/* Slide Content */}
               <div className="">
                 {data.map((item, index) => {
@@ -63,7 +63,7 @@ const Blog = () => {
                         index === currentIndex ? "opacity-100" : "opacity-0"
                       } transition-opacity duration-1000 ease-in-out absolute w-full h-full`}
                     >
-                      <section className="relative p-2">
+                      <section className="relative">
                         <img
                           className="rounded-xl w-full h-[500px] object-center"
                           src={item.img}

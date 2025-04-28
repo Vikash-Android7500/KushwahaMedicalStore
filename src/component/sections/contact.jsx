@@ -1,4 +1,4 @@
-import MedicalImage from "..//../assets/medicalImage.png";
+import MedicalImage from "..//../assets/store.svg";
 import Spinner from "../Loading/spinner";
 import { useState, useEffect } from "react";
 import { ArrowBigLeft, Mail } from "lucide-react";
@@ -22,12 +22,12 @@ const Contact = () => {
       ) : (
         <>
           <section className="max-w-full p-8 relative min-h-[100vh] overflow-hidden flex justify-center ">
-            <div className="w-full max-w-[1024px] rounded-md border-x-Light overflow-hidden grid grid-flow-row-reverse lg:grid-cols-2 bg-header">
-              <div className="relative px-9 before:content-[''] md:before:top-[-75px] md:before:right-[65px] md:before:bottom-auto md:before:scale-95">
+            <div className="p-5 w-full max-w-[1410px] flex flex-col-reverse gap-y-5 lg:flex-row md:justify-between md:items-center">
+              <div className="max-w-full sm:max-w-[50%]">
                 <h3 className="text-blue-500 font-bold text-2xl line-clamp-1 mb-4 text-box3">
                   Let's get in touch
                 </h3>
-                <p className="text-blue-600 font-semibold my-6 text-xl space-y-1 -space-x-2 md:my-6">
+                <p className="text-blue-600 font-semibold  text-xl">
                   कुशवाह मेडिकल स्टोर, आपके पड़ोस की फार्मेसी, आवश्यक दवाओं और
                   स्वास्थ्य संबंधी उत्पादों की एक विस्तृत श्रृंखला प्रदान करती
                   है। बिलसंडा में बीसलपुर रोड पर सुविधाजनक रूप से स्थित, हम अपने
@@ -67,11 +67,10 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex justify-center relative bg-contactIMG before:content-[''] md:before:top-[-13px] md:before:right-[70px] md:before:left-auto">
-                {/* before */}
-                <div className="absolute w-8 h-8 bg-contactIMG rotate-45 top-12 -left-3 before:content-['']"></div>
+              <div className="max-w-full sm:max-w-[50%]">
+
                 <img
-                  className="bg-white rounded-s-full w-full max-w-[80%] max-h-[80%] bg-cover hover:scale-[1.2] duration-200"
+                  className="w-80"
                   src={MedicalImage}
                   alt="ContactImage"
                 />
