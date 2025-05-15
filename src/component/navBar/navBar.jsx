@@ -5,7 +5,7 @@ import { BriefcaseMedical } from "lucide-react";
 
 export const NavBar = () => {
   //State to track the active link and scroll state
-  const [activeLink, setActiveLink] = useState("hero");
+  const [activeLink, setActiveLink] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
 
   //Function to smoothly scroll to a section by its ID
@@ -75,16 +75,23 @@ export const NavBar = () => {
           {sectionIds.map((item, index) => (
             <button
               key={index}
-              className={`font-bold cursor-pointer transition-all ${
+              className={`font-bold cursor-pointer transition-all duration-200 ${
                 activeLink === item ? "text-red-400" : "text-blue-500"
               }`}
               onClick={() => scrollToSection(item)}
             >
               <Link
                 to={"/"}
-                className={activeLink === sectionIds ? "" : ""}
+                className={
+                  activeLink === sectionIds
+                    ? ""
+                    : ""
+                }
               ></Link>
-              {item}
+              {
+                item === "home" 
+              ? "Home" 
+              : item.charAt(0).toUpperCase() + item.slice(1)}
             </button>
           ))}
         </nav>

@@ -3,11 +3,11 @@ import { Copyright } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="flex justify-center items-end w-full h-[100px] shadow-amber-100 shadow-xl border bg-[#FFFDD0] text-blue-500">
-      <p className="flex gap-x-1 text-base">
-        Copyright
+      <p className="flex gap-x-1 text-sm">
         <div>
-          <Copyright color="blue" />
+          <Copyright size={20} color="blue" />
         </div>
+        Copyright
         2025 Made in
         <span>
           <a

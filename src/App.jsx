@@ -5,7 +5,7 @@ import { NavBar } from "./component/navBar/navBar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App select-none">
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
